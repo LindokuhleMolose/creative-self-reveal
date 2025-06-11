@@ -10,7 +10,6 @@ const Skills = () => {
       color: 'text-blue-500',
       skills: [
         { name: 'Microsoft Office Suite', level: 90 },
-        { name: 'Microsoft Excel', level: 85 },
         { name: 'Microsoft Word', level: 95 },
         { name: 'Microsoft PowerPoint', level: 88 },
         { name: 'Microsoft Teams', level: 80 },

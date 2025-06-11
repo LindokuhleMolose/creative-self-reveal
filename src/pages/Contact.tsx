@@ -1,29 +1,8 @@
 
 import PageTransition from '@/components/PageTransition';
-import { Mail, Phone, Send, Linkedin } from 'lucide-react';
-import { useState } from 'react';
+import { Mail, Phone, Linkedin, MessageCircle } from 'lucide-react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Handle form submission here
-  };
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
   const contactInfo = [
     {
       icon: Mail,
@@ -49,7 +28,7 @@ const Contact = () => {
     <PageTransition>
       <div className="min-h-screen pt-24 pb-16">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
                 Get In Touch
@@ -59,7 +38,7 @@ const Contact = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-8">
                 <div>
                   <h2 className="text-3xl font-bold text-foreground mb-6">Let's Connect</h2>
@@ -95,82 +74,27 @@ const Contact = () => {
               </div>
 
               <div className="bg-card border border-border rounded-xl p-8">
-                <h2 className="text-2xl font-bold text-foreground mb-6">Send Me a Message</h2>
+                <h2 className="text-2xl font-bold text-foreground mb-6 text-center">Portfolio Chatbot</h2>
                 
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                        Name
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                        placeholder="Your name"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                        Email
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                        placeholder="your.email@example.com"
-                        required
-                      />
-                    </div>
+                <div className="text-center space-y-6">
+                  <div className="bg-primary/10 p-6 rounded-lg">
+                    <MessageCircle className="text-primary mx-auto mb-4" size={48} />
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      Want to know more about my portfolio and experience? Chat with my AI assistant 
+                      that can answer questions about my projects, skills, and background!
+                    </p>
                   </div>
                   
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
-                      Subject
-                    </label>
-                    <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                      placeholder="What's this about?"
-                      required
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                      Message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      rows={6}
-                      className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors resize-none"
-                      placeholder="Tell me about the opportunity..."
-                      required
-                    ></textarea>
-                  </div>
-                  
-                  <button
-                    type="submit"
-                    className="w-full flex items-center justify-center space-x-2 bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 font-medium"
+                  <a
+                    href="https://www.chatbase.co/chatbot-iframe/MN1sBVvJuH9UN6RzWm8On"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center space-x-2 bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 font-medium w-full"
                   >
-                    <Send size={18} />
-                    <span>Send Message</span>
-                  </button>
-                </form>
+                    <MessageCircle size={18} />
+                    <span>Chat About My Portfolio</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
