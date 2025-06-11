@@ -1,28 +1,28 @@
 
 import PageTransition from '@/components/PageTransition';
-import { Code, Palette, Lightbulb, Heart } from 'lucide-react';
+import { Code, GraduationCap, Lightbulb, Heart } from 'lucide-react';
 
 const About = () => {
   const values = [
     {
       icon: Code,
-      title: 'Clean Code',
-      description: 'I believe in writing maintainable, scalable code that stands the test of time.'
+      title: 'Technical Skills',
+      description: 'Passionate about programming and developing innovative applications using various technologies.'
     },
     {
-      icon: Palette,
-      title: 'Design Thinking',
-      description: 'Every pixel matters. I focus on creating intuitive and beautiful user experiences.'
+      icon: GraduationCap,
+      title: 'Continuous Learning',
+      description: 'Always eager to learn new technologies and improve my development skills.'
     },
     {
       icon: Lightbulb,
       title: 'Innovation',
-      description: 'Always learning and exploring new technologies to solve complex problems.'
+      description: 'Creating solutions that solve real-world problems through technology and creativity.'
     },
     {
       icon: Heart,
-      title: 'Passion',
-      description: 'I love what I do and it shows in every project I work on.'
+      title: 'Dedication',
+      description: 'Committed to excellence and passionate about every project I work on.'
     }
   ];
 
@@ -43,24 +43,23 @@ const About = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-foreground">
-                  Hi, I'm John Doe
+                  Hi, I'm Lindokuhle Molose
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    I'm a passionate full-stack developer with over 5 years of experience creating 
-                    digital solutions that matter. My journey began with a curiosity about how 
-                    websites work, and it has evolved into a deep love for crafting exceptional 
-                    user experiences.
+                    I'm a recent graduate with a Diploma in ICT Application Development from 
+                    Walter Sisulu University (2025). I completed my matric in 2021 at 
+                    Mthingwevu S.S.S and am currently a candidate at CAPACITI.
                   </p>
                   <p>
-                    When I'm not coding, you'll find me exploring new technologies, contributing 
-                    to open-source projects, or sharing knowledge with the developer community. 
-                    I believe that great software is built by great teams, and I thrive in 
-                    collaborative environments.
+                    My journey into technology began with a curiosity about how applications work, 
+                    and it has evolved into a deep passion for creating digital solutions. 
+                    I'm excited to start my career and contribute to meaningful projects.
                   </p>
                   <p>
-                    My approach combines technical expertise with creative problem-solving, 
-                    ensuring that every project I work on is both functional and beautiful.
+                    I believe in the power of technology to solve problems and improve lives. 
+                    My approach combines technical knowledge with creativity to build 
+                    applications that are both functional and user-friendly.
                   </p>
                 </div>
               </div>

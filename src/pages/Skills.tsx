@@ -1,92 +1,70 @@
 
 import PageTransition from '@/components/PageTransition';
-import { Code, Palette, Server, Database, Smartphone, Globe } from 'lucide-react';
+import { Code, Database, Palette, Bot, Monitor, FileCode } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Frontend Development',
-      icon: Code,
+      title: 'Microsoft Skills',
+      icon: Monitor,
       color: 'text-blue-500',
       skills: [
-        { name: 'React', level: 95 },
-        { name: 'TypeScript', level: 90 },
-        { name: 'Next.js', level: 85 },
-        { name: 'Vue.js', level: 80 },
-        { name: 'Tailwind CSS', level: 95 },
-        { name: 'HTML/CSS', level: 98 }
+        { name: 'Microsoft Office Suite', level: 90 },
+        { name: 'Microsoft Excel', level: 85 },
+        { name: 'Microsoft Word', level: 95 },
+        { name: 'Microsoft PowerPoint', level: 88 },
+        { name: 'Microsoft Teams', level: 80 },
+        { name: 'Microsoft Outlook', level: 85 }
       ]
     },
     {
-      title: 'Backend Development',
-      icon: Server,
+      title: 'Programming Skills',
+      icon: Code,
       color: 'text-green-500',
       skills: [
-        { name: 'Node.js', level: 90 },
-        { name: 'Python', level: 85 },
-        { name: 'Express.js', level: 88 },
-        { name: 'Django', level: 80 },
-        { name: 'GraphQL', level: 75 },
-        { name: 'REST APIs', level: 95 }
+        { name: 'Visual Basic', level: 85 },
+        { name: 'Technical Programming', level: 80 },
+        { name: 'Application Development', level: 78 },
+        { name: 'Software Development', level: 75 },
+        { name: 'Problem Solving', level: 88 },
+        { name: 'Code Documentation', level: 82 }
       ]
     },
     {
-      title: 'Database & Cloud',
+      title: 'Database & Development Tools',
       icon: Database,
       color: 'text-purple-500',
       skills: [
-        { name: 'PostgreSQL', level: 85 },
-        { name: 'MongoDB', level: 80 },
-        { name: 'AWS', level: 88 },
-        { name: 'Google Cloud', level: 82 },
-        { name: 'Docker', level: 85 },
-        { name: 'Kubernetes', level: 75 }
+        { name: 'Oracle APEX', level: 80 },
+        { name: 'Database Design', level: 75 },
+        { name: 'SQL', level: 78 },
+        { name: 'Data Management', level: 80 },
+        { name: 'Web Applications', level: 75 },
+        { name: 'System Integration', level: 70 }
       ]
     },
     {
-      title: 'Design & UX',
-      icon: Palette,
-      color: 'text-pink-500',
-      skills: [
-        { name: 'Figma', level: 90 },
-        { name: 'Adobe XD', level: 85 },
-        { name: 'UI/UX Design', level: 88 },
-        { name: 'Prototyping', level: 85 },
-        { name: 'User Research', level: 80 },
-        { name: 'Design Systems', level: 92 }
-      ]
-    },
-    {
-      title: 'Mobile Development',
-      icon: Smartphone,
+      title: 'AI & Development Projects',
+      icon: Bot,
       color: 'text-orange-500',
       skills: [
-        { name: 'React Native', level: 85 },
-        { name: 'Flutter', level: 75 },
-        { name: 'iOS Development', level: 70 },
-        { name: 'Android Development', level: 72 },
-        { name: 'Mobile UI/UX', level: 88 },
-        { name: 'App Store Optimization', level: 80 }
-      ]
-    },
-    {
-      title: 'DevOps & Tools',
-      icon: Globe,
-      color: 'text-red-500',
-      skills: [
-        { name: 'Git', level: 95 },
-        { name: 'CI/CD', level: 85 },
-        { name: 'Linux', level: 88 },
-        { name: 'Nginx', level: 80 },
-        { name: 'Monitoring', level: 82 },
-        { name: 'Testing', level: 90 }
+        { name: 'AI Fundamentals', level: 75 },
+        { name: 'Chatbot Development', level: 80 },
+        { name: 'Portfolio Development', level: 85 },
+        { name: 'Code Generation Tools', level: 78 },
+        { name: 'Project Management', level: 82 },
+        { name: 'Documentation', level: 88 }
       ]
     }
   ];
 
-  const tools = [
-    'VS Code', 'Git', 'Figma', 'Postman', 'Docker', 'Jira', 'Slack', 'Notion', 
-    'Adobe Creative Suite', 'Vercel', 'Netlify', 'Firebase', 'Supabase', 'Prisma'
+  const recentProjects = [
+    'AI Fundamental Chatbot',
+    'Portfolio Related Chatbot', 
+    'Code Snippet Generator',
+    'ICT Application Development Projects',
+    'Database Management Systems',
+    'Technical Documentation'
   ];
 
   return (
@@ -96,10 +74,10 @@ const Skills = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
-                Skills & Expertise
+                Skills & Projects
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Technologies and tools I use to bring ideas to life
+                Technical skills and recent projects I've worked on
               </p>
             </div>
 
@@ -137,14 +115,17 @@ const Skills = () => {
             </div>
 
             <div className="bg-card border border-border rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-foreground mb-6 text-center">Tools & Technologies</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-6 text-center flex items-center justify-center">
+                <FileCode className="mr-3 text-primary" size={28} />
+                Recent Projects
+              </h3>
               <div className="flex flex-wrap gap-3 justify-center">
-                {tools.map((tool, index) => (
+                {recentProjects.map((project, index) => (
                   <span 
                     key={index}
                     className="bg-gradient-to-r from-primary/10 to-accent/10 text-foreground px-4 py-2 rounded-full border border-border hover:scale-105 transition-transform duration-200 cursor-default"
                   >
-                    {tool}
+                    {project}
                   </span>
                 ))}
               </div>

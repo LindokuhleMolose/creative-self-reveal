@@ -1,6 +1,6 @@
 
 import PageTransition from '@/components/PageTransition';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, Send, Linkedin } from 'lucide-react';
 import { useState } from 'react';
 
 const Contact = () => {
@@ -28,41 +28,20 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'john.doe@example.com',
-      href: 'mailto:john.doe@example.com'
+      value: 'lindokuhlemolose2@gmail.com',
+      href: 'mailto:lindokuhlemolose2@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
-    },
-    {
-      icon: MapPin,
-      label: 'Location',
-      value: 'San Francisco, CA',
-      href: 'https://maps.google.com/?q=San+Francisco,CA'
-    }
-  ];
-
-  const socialLinks = [
-    {
-      icon: Github,
-      label: 'GitHub',
-      href: 'https://github.com',
-      color: 'hover:text-gray-900'
+      value: '079 082 6960',
+      href: 'tel:+27790826960'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com',
-      color: 'hover:text-blue-600'
-    },
-    {
-      icon: Twitter,
-      label: 'Twitter',
-      href: 'https://twitter.com',
-      color: 'hover:text-blue-400'
+      value: 'linkedin.com/in/lindokuhle-molose-a80b25330',
+      href: 'https://www.linkedin.com/in/lindokuhle-molose-a80b25330'
     }
   ];
 
@@ -76,7 +55,7 @@ const Contact = () => {
                 Get In Touch
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Let's discuss your next project or just say hello!
+                Let's connect and discuss opportunities!
               </p>
             </div>
 
@@ -85,9 +64,9 @@ const Contact = () => {
                 <div>
                   <h2 className="text-3xl font-bold text-foreground mb-6">Let's Connect</h2>
                   <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                    I'm always excited to work on new projects and collaborate with amazing people. 
-                    Whether you have a project in mind or just want to chat about technology, 
-                    feel free to reach out!
+                    I'm excited to explore new opportunities and connect with professionals in the tech industry. 
+                    As a recent graduate and CAPACITI candidate, I'm eager to contribute to meaningful projects 
+                    and grow my career in application development.
                   </p>
                 </div>
 
@@ -112,27 +91,6 @@ const Contact = () => {
                       </a>
                     );
                   })}
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-4">Follow Me</h3>
-                  <div className="flex space-x-4">
-                    {socialLinks.map((social, index) => {
-                      const Icon = social.icon;
-                      return (
-                        <a
-                          key={index}
-                          href={social.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className={`p-3 bg-card border border-border rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-110 ${social.color}`}
-                          aria-label={social.label}
-                        >
-                          <Icon size={24} />
-                        </a>
-                      );
-                    })}
-                  </div>
                 </div>
               </div>
 
@@ -200,7 +158,7 @@ const Contact = () => {
                       onChange={handleInputChange}
                       rows={6}
                       className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors resize-none"
-                      placeholder="Tell me about your project..."
+                      placeholder="Tell me about the opportunity..."
                       required
                     ></textarea>
                   </div>
