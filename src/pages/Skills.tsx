@@ -9,11 +9,11 @@ const Skills = () => {
       icon: Monitor,
       color: 'text-blue-500',
       skills: [
-        { name: 'Microsoft Office Suite', level: 90 },
-        { name: 'Microsoft Word', level: 95 },
-        { name: 'Microsoft PowerPoint', level: 88 },
-        { name: 'Microsoft Teams', level: 80 },
-        { name: 'Microsoft Outlook', level: 85 }
+        'Microsoft Office Suite',
+        'Microsoft Word',
+        'Microsoft PowerPoint',
+        'Microsoft Teams',
+        'Microsoft Outlook'
       ]
     },
     {
@@ -21,12 +21,12 @@ const Skills = () => {
       icon: Code,
       color: 'text-green-500',
       skills: [
-        { name: 'Visual Basic', level: 85 },
-        { name: 'Technical Programming', level: 80 },
-        { name: 'Application Development', level: 78 },
-        { name: 'Software Development', level: 75 },
-        { name: 'Problem Solving', level: 88 },
-        { name: 'Code Documentation', level: 82 }
+        'Visual Basic',
+        'Technical Programming',
+        'Application Development',
+        'Software Development',
+        'Problem Solving',
+        'Code Documentation'
       ]
     },
     {
@@ -34,12 +34,12 @@ const Skills = () => {
       icon: Database,
       color: 'text-purple-500',
       skills: [
-        { name: 'Oracle APEX', level: 80 },
-        { name: 'Database Design', level: 75 },
-        { name: 'SQL', level: 78 },
-        { name: 'Data Management', level: 80 },
-        { name: 'Web Applications', level: 75 },
-        { name: 'System Integration', level: 70 }
+        'Oracle APEX',
+        'Database Design',
+        'SQL',
+        'Data Management',
+        'Web Applications',
+        'System Integration'
       ]
     },
     {
@@ -47,23 +47,14 @@ const Skills = () => {
       icon: Bot,
       color: 'text-orange-500',
       skills: [
-        { name: 'AI Fundamentals', level: 75 },
-        { name: 'Chatbot Development', level: 80 },
-        { name: 'Portfolio Development', level: 85 },
-        { name: 'Code Generation Tools', level: 78 },
-        { name: 'Project Management', level: 82 },
-        { name: 'Documentation', level: 88 }
+        'AI Fundamentals',
+        'Chatbot Development',
+        'Portfolio Development',
+        'Code Generation Tools',
+        'Project Management',
+        'Documentation'
       ]
     }
-  ];
-
-  const recentProjects = [
-    'AI Fundamental Chatbot',
-    'Portfolio Related Chatbot', 
-    'Code Snippet Generator',
-    'ICT Application Development Projects',
-    'Database Management Systems',
-    'Technical Documentation'
   ];
 
   return (
@@ -92,19 +83,11 @@ const Skills = () => {
                       <h3 className="text-2xl font-bold text-foreground">{category.title}</h3>
                     </div>
                     
-                    <div className="space-y-4">
+                    <div className="space-y-3">
                       {category.skills.map((skill, skillIndex) => (
-                        <div key={skillIndex}>
-                          <div className="flex justify-between items-center mb-2">
-                            <span className="text-foreground font-medium">{skill.name}</span>
-                            <span className="text-muted-foreground text-sm">{skill.level}%</span>
-                          </div>
-                          <div className="w-full bg-secondary rounded-full h-2">
-                            <div 
-                              className="bg-gradient-to-r from-primary to-accent h-2 rounded-full transition-all duration-1000 ease-out"
-                              style={{ width: `${skill.level}%` }}
-                            ></div>
-                          </div>
+                        <div key={skillIndex} className="flex items-center">
+                          <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                          <span className="text-foreground">{skill}</span>
                         </div>
                       ))}
                     </div>
@@ -116,17 +99,27 @@ const Skills = () => {
             <div className="bg-card border border-border rounded-xl p-8">
               <h3 className="text-2xl font-bold text-foreground mb-6 text-center flex items-center justify-center">
                 <FileCode className="mr-3 text-primary" size={28} />
-                Recent Projects
+                My Projects
               </h3>
-              <div className="flex flex-wrap gap-3 justify-center">
-                {recentProjects.map((project, index) => (
-                  <span 
-                    key={index}
-                    className="bg-gradient-to-r from-primary/10 to-accent/10 text-foreground px-4 py-2 rounded-full border border-border hover:scale-105 transition-transform duration-200 cursor-default"
-                  >
-                    {project}
-                  </span>
-                ))}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="https://code-spark-snippet-forge.lovable.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 font-medium"
+                >
+                  <Code className="mr-2" size={18} />
+                  Code Snippet Generator
+                </a>
+                <a
+                  href="https://poe.com/TheDiligent"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-secondary text-secondary-foreground px-6 py-3 rounded-lg hover:bg-secondary/80 transition-all duration-300 transform hover:scale-105 font-medium"
+                >
+                  <Bot className="mr-2" size={18} />
+                  AI Fundamental Chatbot
+                </a>
               </div>
             </div>
           </div>
