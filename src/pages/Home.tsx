@@ -13,8 +13,8 @@ const Home = () => {
               <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-br from-primary to-accent p-1">
                 <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
                   <img 
-                    src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop&crop=face" 
-                    alt="Profile" 
+                    src="/lovable-uploads/8db38120-c60a-40cf-81b3-ea4fac951c30.png" 
+                    alt="Lindokuhle Molose - Graduate" 
                     className="w-28 h-28 rounded-full object-cover"
                   />
                 </div>

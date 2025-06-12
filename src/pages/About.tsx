@@ -40,38 +40,26 @@ const About = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-              <div className="space-y-6">
-                <h2 className="text-3xl font-bold text-foreground">
-                  Hi, I'm Lindokuhle Molose
-                </h2>
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
-                  <p>
-                    I'm a recent graduate with a Diploma in ICT Application Development from 
-                    Walter Sisulu University (2025). I completed my matric in 2021 at 
-                    Mthingwevu S.S.S and am currently a candidate at CAPACITI.
-                  </p>
-                  <p>
-                    My journey into technology began with a curiosity about how applications work, 
-                    and it has evolved into a deep passion for creating digital solutions. 
-                    I'm excited to start my career and contribute to meaningful projects.
-                  </p>
-                  <p>
-                    I believe in the power of technology to solve problems and improve lives. 
-                    My approach combines technical knowledge with creativity to build 
-                    applications that are both functional and user-friendly.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="relative">
-                <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 p-1">
-                  <img 
-                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=600&fit=crop&crop=face" 
-                    alt="About me" 
-                    className="w-full h-full object-cover rounded-xl"
-                  />
-                </div>
+            <div className="space-y-6 mb-16">
+              <h2 className="text-3xl font-bold text-foreground text-center">
+                Hi, I'm Lindokuhle Molose
+              </h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                <p>
+                  I'm a recent graduate with a Diploma in ICT Application Development from 
+                  Walter Sisulu University (2025). I completed my matric in 2021 at 
+                  Mthingwevu S.S.S and am currently a candidate at CAPACITI.
+                </p>
+                <p>
+                  My journey into technology began with a curiosity about how applications work, 
+                  and it has evolved into a deep passion for creating digital solutions. 
+                  I'm excited to start my career and contribute to meaningful projects.
+                </p>
+                <p>
+                  I believe in the power of technology to solve problems and improve lives. 
+                  My approach combines technical knowledge with creativity to build 
+                  applications that are both functional and user-friendly.
+                </p>
               </div>
             </div>
 
