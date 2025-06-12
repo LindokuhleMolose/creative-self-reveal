@@ -14,7 +14,7 @@ const PortfolioChatbot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: "Hi! I'm here to answer questions about Lindokuhle Molose's portfolio. Ask me about his education, skills, projects, or contact information!",
+      text: "Hey there, how can I help you?",
       isUser: false,
       timestamp: new Date()
     }
@@ -37,7 +37,7 @@ const PortfolioChatbot = () => {
       "AI Fundamentals", "Chatbot Development", "Portfolio Development"
     ],
     projects: [
-      "AI Fundamental Chatbot", "Portfolio Chatbot", "Code Snippet Generator"
+      "AI Fundamental Chatbot", "Code Snippet Generator"
     ],
     contact: {
       phone: "079 082 6960",
@@ -50,15 +50,15 @@ const PortfolioChatbot = () => {
     const message = userMessage.toLowerCase();
     
     if (message.includes('education') || message.includes('study') || message.includes('university') || message.includes('diploma')) {
-      return `Lindokuhle graduated with a ${portfolioData.education.diploma}. He also completed his matric in 2021 at Mthingwevu S.S.S.`;
+      return `Lindokuhle graduated with a ${portfolioData.education.diploma}. She also completed her matric in 2021 at Mthingwevu S.S.S.`;
     }
     
     if (message.includes('skill') || message.includes('technology') || message.includes('programming')) {
-      return `Lindokuhle has skills in: ${portfolioData.skills.slice(0, 8).join(', ')}, and many more! He specializes in Microsoft tools, programming, database management, and AI development.`;
+      return `Lindokuhle has skills in: ${portfolioData.skills.slice(0, 8).join(', ')}, and many more! She specializes in Microsoft tools, programming, database management, and AI development.`;
     }
     
     if (message.includes('project') || message.includes('work') || message.includes('built')) {
-      return `Lindokuhle has worked on several projects including: ${portfolioData.projects.join(', ')}. These showcase his skills in AI, web development, and application development.`;
+      return `Lindokuhle has worked on several projects including: ${portfolioData.projects.join(', ')}. These showcase her skills in AI, web development, and application development.`;
     }
     
     if (message.includes('contact') || message.includes('email') || message.includes('phone') || message.includes('linkedin')) {
@@ -66,15 +66,15 @@ const PortfolioChatbot = () => {
     }
     
     if (message.includes('experience') || message.includes('job') || message.includes('work experience')) {
-      return `Lindokuhle is a recent graduate and current CAPACITI candidate. While he doesn't have formal work experience yet, he has completed several technical projects and is actively building his portfolio.`;
+      return `Lindokuhle is a recent graduate and current CAPACITI candidate. While she doesn't have formal work experience yet, she has completed several technical projects and is actively building her portfolio.`;
     }
     
     if (message.includes('capaciti')) {
-      return `Yes! Lindokuhle is currently a candidate at CAPACITI, which is part of his professional development journey in the tech industry.`;
+      return `Yes! Lindokuhle is currently a candidate at CAPACITI, which is part of her professional development journey in the tech industry.`;
     }
     
     if (message.includes('about') || message.includes('who')) {
-      return `${portfolioData.name} is an ICT Application Development graduate and CAPACITI candidate. He's passionate about creating innovative digital solutions and is excited to start his career in technology.`;
+      return `${portfolioData.name} is an ICT Application Development graduate and CAPACITI candidate. She's passionate about creating innovative digital solutions and is excited to start her career in technology.`;
     }
     
     return "I can help you learn about Lindokuhle's education, skills, projects, and contact information. What would you like to know specifically?";
