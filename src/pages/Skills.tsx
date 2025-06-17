@@ -1,4 +1,3 @@
-
 import PageTransition from '@/components/PageTransition';
 import { Code, Database, Palette, Bot, Monitor, FileCode } from 'lucide-react';
 
@@ -38,8 +37,7 @@ const Skills = () => {
         'Database Design',
         'SQL',
         'Data Management',
-        'Web Applications',
-        'System Integration'
+        'Web Applications'
       ]
     },
     {
