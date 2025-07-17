@@ -35,7 +35,6 @@ const Skills = () => {
       skills: [
         'Oracle APEX',
         'Database Design',
-        'SQL',
         'Data Management',
         'Web Applications'
       ]
@@ -49,7 +48,6 @@ const Skills = () => {
         'Chatbot Development',
         'Portfolio Development',
         'Code Generation Tools',
-        'Project Management',
         'Documentation'
       ]
     }
