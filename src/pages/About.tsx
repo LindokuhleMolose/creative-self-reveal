@@ -53,6 +53,7 @@ const About = () => {
                 <p>
                   My journey into technology began with a curiosity about how applications work, 
                   and it has evolved into a deep passion for creating digital solutions. 
+                  I have a particular interest in AI and its potential to transform how we interact with technology.
                   I'm excited to start my career and contribute to meaningful projects.
                 </p>
                 <p>
