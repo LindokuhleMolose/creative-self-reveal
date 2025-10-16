@@ -99,7 +99,7 @@ const Skills = () => {
               </h3>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://code-spark-snippet-forge.lovable.app/"
+                  href="https://code-spark-snippet-forge-72.lovable.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 font-medium"
