@@ -24,10 +24,16 @@ const Education = () => {
 
   const currentStatus = [
     {
-      title: 'CAPACITI Candidate',
-      issuer: 'CAPACITI',
-      date: '2025 - Present',
+      title: 'AI Developer & Sales Agent',
+      issuer: 'CBO Experience',
+      date: 'Oct 2025 - Present',
       level: 'Current'
+    },
+    {
+      title: 'AI Developer (CAPACITI Candidate)',
+      issuer: 'CAPACITI',
+      date: '2025 - Oct 2025',
+      level: 'Completed'
     }
   ];
 
