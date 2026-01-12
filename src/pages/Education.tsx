@@ -30,7 +30,7 @@ const Education = () => {
       level: 'Current'
     },
     {
-      title: 'AI Developer (CAPACITI Candidate)',
+      title: 'AI Developer',
       issuer: 'CAPACITI',
       date: '2025 - Oct 2025',
       level: 'Completed'
