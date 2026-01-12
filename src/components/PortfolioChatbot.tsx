@@ -27,7 +27,7 @@ const PortfolioChatbot = () => {
       diploma: "Diploma in ICT Application Development from Walter Sisulu University (2025)",
       matric: "Completed matric in 2021 at Mthingwevu S.S.S"
     },
-    status: "CAPACITI candidate",
+    status: "AI Developer & Sales Agent at CBO Experience (previously AI Developer at CAPACITI)",
     skills: [
       "Microsoft Office Suite", "Microsoft Word", "Microsoft PowerPoint", 
       "Microsoft Teams", "Microsoft Outlook", "Visual Basic", "Technical Programming",
@@ -66,15 +66,15 @@ const PortfolioChatbot = () => {
     }
     
     if (message.includes('experience') || message.includes('job') || message.includes('work experience')) {
-      return `Lindokuhle is a recent graduate and current CAPACITI candidate. While she doesn't have formal work experience yet, she has completed several technical projects and is actively building her portfolio.`;
+      return `Lindokuhle is currently an AI Developer & Sales Agent at CBO Experience (since Oct 2025). Previously, she worked as an AI Developer at CAPACITI (2025 - Oct 2025). She has completed several technical projects and continues to build her portfolio.`;
     }
     
     if (message.includes('capaciti')) {
-      return `Yes! Lindokuhle is currently a candidate at CAPACITI, which is part of her professional development journey in the tech industry.`;
+      return `Lindokuhle previously worked as an AI Developer at CAPACITI from 2025 until October 2025. She has since moved on to CBO Experience where she works as an AI Developer & Sales Agent.`;
     }
     
     if (message.includes('about') || message.includes('who')) {
-      return `${portfolioData.name} is an ICT Application Development graduate and CAPACITI candidate. She's passionate about creating innovative digital solutions and is excited to start her career in technology.`;
+      return `${portfolioData.name} is an ICT Application Development graduate currently working as an AI Developer & Sales Agent at CBO Experience. She previously worked at CAPACITI and is passionate about creating innovative digital solutions.`;
     }
     
     return "I can help you learn about Lindokuhle's education, skills, projects, and contact information. What would you like to know specifically?";
