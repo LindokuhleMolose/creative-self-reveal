@@ -90,7 +90,7 @@ const Contact = () => {
                   <h2 className="text-3xl font-bold text-foreground mb-6 text-center">Let's Connect</h2>
                   <p className="text-muted-foreground text-lg leading-relaxed mb-8 text-center">
                     I'm excited to explore new opportunities and connect with professionals in the tech industry. 
-                    As a recent graduate and CAPACITI candidate, I'm eager to contribute to meaningful projects 
+                    I'm eager to contribute to meaningful projects 
                     and grow my career in application development.
                   </p>
                 </div>
