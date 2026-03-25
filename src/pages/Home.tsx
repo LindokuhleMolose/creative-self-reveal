@@ -41,10 +41,14 @@ const Home = () => {
               </Link>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
               <div className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
                 <h3 className="text-2xl font-bold text-primary mb-2">2025</h3>
                 <p className="text-muted-foreground">Diploma Graduate</p>
+              </div>
+              <div className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                <h3 className="text-2xl font-bold text-primary mb-2">CAPACITI</h3>
+                <p className="text-muted-foreground">AI Developer</p>
               </div>
               <div className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
                 <h3 className="text-2xl font-bold text-primary mb-2">CBO Experience</h3>
