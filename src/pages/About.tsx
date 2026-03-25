@@ -48,8 +48,8 @@ const About = () => {
                 <p>
                   I'm a recent graduate with a Diploma in ICT Application Development from 
                   Walter Sisulu University (2025). I completed my matric in 2021 at 
-                  Mthingwevu S.S.S. I previously worked as an AI Developer at CAPACITI (2025 - Oct 2025) 
-                  and am currently an AI Developer & Sales Agent at CBO Experience.
+                  Mthingwevu S.S.S. I have experience in AI development and sales, 
+                  having previously worked as an AI Developer at CAPACITI.
                 </p>
                 <p>
                   My journey into technology began with a curiosity about how applications work, 
