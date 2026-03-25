@@ -27,7 +27,7 @@ const Home = () => {
               </p>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                 Recent graduate passionate about creating innovative digital solutions. 
-                Gained experience as an AI Developer at CAPACITI and as a Sales Agent at CBO Experience, bringing fresh ideas and technical skills to the development world.
+                Gained experience as an AI Developer at CAPACITI and as an AI Developer & Sales Agent at CBO Experience, bringing fresh ideas and technical skills to the development world.
               </p>
             </div>
 
